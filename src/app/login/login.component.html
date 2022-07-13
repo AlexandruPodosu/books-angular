@@ -3,7 +3,8 @@
 
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email:</mat-label>
-      <input type="email" matInput [formControl]="emailFormControl" placeholder="test@yahoo.com">
+      <input type="email" matInput [formControl]="emailFormControl" placeholder="test@yahoo.com" [(ngModel)]="email"
+        name="email">
       <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
         Please enter a valid email address
       </mat-error>
@@ -14,7 +15,8 @@
 
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Password</mat-label>
-      <input [type]="hide ? 'password' : 'text'" matInput [formControl]="passwordControl" placeholder="Password">
+      <input [type]="hide ? 'password' : 'text'" matInput [formControl]="passwordControl" placeholder="Password"
+        [(ngModel)]="password" name="password">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
         [attr.aria-pressed]="hide">
         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -24,7 +26,9 @@
       </mat-error>
     </mat-form-field>
 
+    <button mat-button type="submit" (click)="onLogin()">Login</button>
+
   </form>
-  <button mat-button>Login</button>
+
 
 </div>

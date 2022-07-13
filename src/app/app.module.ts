@@ -12,7 +12,9 @@ import {MatButtonModule} from '@angular/material/button'; //button
 import {MatIconModule} from '@angular/material/icon';
 import { ProductsComponent } from './products/products.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'; // pt verificare email
-import {MatFormFieldModule} from '@angular/material/form-field'; // pt parola 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; // pt parola 
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import {MatFormFieldModule} from '@angular/material/form-field'; // pt parola
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    ProductsComponent
+    ProductsComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   //module importante din material
   imports: [
@@ -33,7 +37,8 @@ import {MatFormFieldModule} from '@angular/material/form-field'; // pt parola
     MatToolbarModule,
     MatIconModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule
   ],
   //servicii
   providers: [],
