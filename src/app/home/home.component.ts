@@ -15,11 +15,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   changeButton() : void{
-    this.title ="New title";
+    
     this.color= "red";
   }
   changeTitle():void 
   {
-
+    this.title ="New title";
   }
 }

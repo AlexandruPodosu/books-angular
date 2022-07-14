@@ -1,7 +1,8 @@
+import { Injectable } from "@angular/core";
 import { Products } from "../products/products.component";
-
+@Injectable({providedIn: "root"})
 export class productsService {
-    products: Products[] = [
+    productss: Products[] = [
         {
             id:0,
             title: "Test1",
@@ -9,10 +10,13 @@ export class productsService {
             price:15
          },
          {
-            id:0,
+            id:1,
             title: "Test2",
             description: "Descriere2",
             price:19
          },
     ] 
+    getProduct(){
+        return this.productss;
+    }
 }
