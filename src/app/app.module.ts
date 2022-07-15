@@ -15,6 +15,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { routingcComponents } from './app-routing.module';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import {MatDividerModule} from '@angular/material/divider';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   //comp create de noi
@@ -22,8 +25,7 @@ import {MatDividerModule} from '@angular/material/divider';
     AppComponent,
     routingcComponents,
     NavbarComponent,
-   
-    
+    ShoppingCartComponent,
   ],
   //module importante din material
   imports: [
@@ -39,7 +41,8 @@ import {MatDividerModule} from '@angular/material/divider';
     FormsModule,
     MatCardModule,
     MatProgressBarModule,
-    MatDividerModule
+    MatDividerModule,
+    FlexLayoutModule
   ],
   //servicii
   providers: [],
