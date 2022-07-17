@@ -1,9 +1,8 @@
-<app-navbar></app-navbar>
-<p [style.color]="color">{{title}}</p>
-<button mat-button type="submit" [disabled]="buttonDisabled">Test</button>
-<button mat-button (click)="changeButton() ">Update</button>
-<mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Email:</mat-label>
-    <input type="email" matInput placeholder="test@yahoo.com" value="" [(ngModel)]="newTitle">
-</mat-form-field>
-<button mat-button (click)="changeTitle() ">Ceva</button>
+<div class="backGroundImage">
+    <app-navbar></app-navbar>
+    <h1 style="text-align:center;">Recomandations</h1>
+    <div style="width: 50%; height: 23%; text-align:center;margin:0; padding-left:25%; padding-right:25%;">
+        <ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1"
+            [imageSize]="{width: '25%', height: 200}" slideImage="1"></ng-image-slider>
+    </div>
+</div>>
