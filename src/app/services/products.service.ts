@@ -17,25 +17,25 @@ export class productsService {
          },
          {
             id:2,
-            title: "Test2",
+            title: "Test3",
             description: "Descriere2",
             price:19
          },
          {
             id:3,
-            title: "Test2",
+            title: "Test4",
             description: "Descriere2",
             price:19
          },
          {
             id:4,
-            title: "Test2",
+            title: "Test5",
             description: "Descriere2",
             price:19
          },
          {
             id:5,
-            title: "Test2",
+            title: "Test6",
             description: "Descriere2",
             price:19
          },

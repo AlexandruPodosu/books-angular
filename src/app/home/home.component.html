@@ -1,8 +1,8 @@
-<div class="backGroundImage">
-    <app-navbar></app-navbar>
-    <h1 style="text-align:center;">Recomandations</h1>
-    <div style="width: 50%; height: 23%; text-align:center;margin:0; padding-left:25%; padding-right:25%;">
-        <ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1"
-            [imageSize]="{width: '25%', height: 200}" slideImage="1"></ng-image-slider>
-    </div>
-</div>>
+<app-navbar></app-navbar>
+<h1 style="text-align:center;">Recomandations</h1>
+<div style="width: 50%; height: 23%; text-align:center;margin:0; padding-left:25%; padding-right:25%;">
+    <ng-image-slider #nav [images]="imageObject" [infinite]="true" [autoSlide]="1"
+        [imageSize]="{width: '25%', height: 200}" slideImage="1"></ng-image-slider>
+</div>
+<h1 style="text-align:center;">All of the products</h1>
+<app-products></app-products>
