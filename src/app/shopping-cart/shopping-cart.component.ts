@@ -8,7 +8,9 @@ import { Products } from '../products/products.component';
 })
 export class ShoppingCartComponent implements OnInit {
   items: Products[] = [];
-  Prices: any;
+  Prices: number[] =[];
+  priceToDecrease: number = 0;
+  
   constructor(private cartService: cartServices) { }
 
   ngOnInit(): void {
@@ -16,12 +18,16 @@ export class ShoppingCartComponent implements OnInit {
     this.Prices = this.GetPrices(this.items);
   }
   removeItem(index: number) {
+    this.priceToDecrease = this.Prices[index];
     this.cartService.removeItem(index);
+    this.Prices =this.GetPrices(this.items); 
 }
   GetPrices(products :Products[]){
      let preturi = products.map(a => a.price);
-     return preturi
-    
+     return preturi;
+  }
+  returnPriceToDecrase(){
+    return this.priceToDecrease;
   }
   
 

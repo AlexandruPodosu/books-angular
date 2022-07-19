@@ -11,13 +11,12 @@ export class cartServices {
    }
    getItems() {
     return this.items;
-  }
+   }
   clearCart() {
     this.items = [];
     return this.items;
-  }
+   }
   removeItem(index: number){
     this.items.splice(index, 1);
-}
-  
+   }
 }
