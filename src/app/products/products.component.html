@@ -7,7 +7,7 @@
                     {{products.description}}
                 </mat-card-content>
                 <mat-card-content>
-                    {{products.price}}
+                    {{products.price | currency: 'RON'}}
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-button (click)="addToCart(products)">Add to cart</button>

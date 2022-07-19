@@ -8,14 +8,22 @@ import { Products } from '../products/products.component';
 })
 export class ShoppingCartComponent implements OnInit {
   items: Products[] = [];
-  constructor(public cartService: cartServices) { }
+  Prices: any;
+  constructor(private cartService: cartServices) { }
 
   ngOnInit(): void {
     this.items = this.cartService.getItems();
+    this.Prices = this.GetPrices(this.items);
   }
   removeItem(index: number) {
     this.cartService.removeItem(index);
 }
+  GetPrices(products :Products[]){
+     let preturi = products.map(a => a.price);
+     return preturi
+    
+  }
+  
 
 }
 

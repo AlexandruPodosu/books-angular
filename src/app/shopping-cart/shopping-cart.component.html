@@ -8,10 +8,13 @@
                     {{products.description}}
                 </mat-card-content>
                 <mat-card-content>
-                    {{products.price}}
+                    {{products.price | currency: 'RON'}}
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-button (click)="removeItem(i)">Delete</button>
                 </mat-card-actions>
             </mat-card>
         </div>
+    </div>
+</div>
+<p style="text-align:center;">Price:{{Prices | checkoutPrice | currency:'RON'}}</p>

@@ -10,7 +10,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'; //
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'; 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { routingcComponents } from './app-routing.module';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -18,6 +18,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgImageSliderModule } from 'ng-image-slider';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { CustomPipe } from './checkoutPrice.pipe';
+
 
 
 @NgModule({
@@ -27,6 +30,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     routingcComponents,
     NavbarComponent,
     ShoppingCartComponent,
+    CustomPipe,
   ],
   //module importante din material
   imports: [
@@ -44,7 +48,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatProgressBarModule,
     MatDividerModule,
     FlexLayoutModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    MatTooltipModule
   ],
   //servicii
   providers: [],
