@@ -4,11 +4,15 @@ import { cartServices } from '../services/cart.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  styleUrls: ['./products.component.scss'],
+
+  
+  
 })
 export class ProductsComponent implements OnInit {
   products : Products[] = [];
   items: Products[] = [];
+ 
 
   constructor(private productsService: productsService, private cartService: cartServices) {
   
@@ -21,6 +25,7 @@ export class ProductsComponent implements OnInit {
   addToCart(product: Products){
     this.cartService.addToCart(product)
    }
+ 
 
 
 }
