@@ -20,6 +20,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CustomPipe } from './checkoutPrice.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -31,6 +32,7 @@ import { CustomPipe } from './checkoutPrice.pipe';
     NavbarComponent,
     ShoppingCartComponent,
     CustomPipe,
+    FooterComponent,
   ],
   //module importante din material
   imports: [
