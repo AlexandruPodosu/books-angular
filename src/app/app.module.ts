@@ -21,6 +21,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CustomPipe } from './checkoutPrice.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 
@@ -33,6 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     ShoppingCartComponent,
     CustomPipe,
     FooterComponent,
+    ChildComponent,
+    ParentComponent,
   ],
   //module importante din material
   imports: [
