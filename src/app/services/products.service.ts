@@ -5,25 +5,25 @@ export class productsService {
     productss: Products[] = [
         {
             id:0,
-            title: "Test1",
+            title: "Book1",
             description: "Descriere1",
             price:15
          },
          {
             id:1,
-            title: "Test2",
+            title: "Book2",
             description: "Descriere2",
             price:19
          },
          {
             id:2,
-            title: "Test3",
+            title: "Book3",
             description: "Descriere3",
             price:40
          },
          {
             id:3,
-            title: "Test4",
+            title: "Book4",
             description: "Descriere4",
             price:20
          },
@@ -35,25 +35,25 @@ export class productsService {
          },
          {
             id:5,
-            title: "Test6",
+            title: "Book6",
             description: "Descriere6",
             price:10
          },
          {
             id:6,
-            title: "Test7",
+            title: "Book7",
             description: "Descriere7",
             price:10
          },
          {
             id:5,
-            title: "Test8",
+            title: "Book8",
             description: "Descriere8",
             price:10
          },
          {
             id:5,
-            title: "Test9",
+            title: "Book9",
             description: "Descriere9",
             price:10
          },
